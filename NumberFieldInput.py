@@ -163,13 +163,10 @@ class NumberField():
                 break
         CurrentStr=(self.CurrentNumber[0]+self.CurrentNumber[1]+self.CurrentNumber[2]).replace(" ","")
         if CurrentStr=="":
-            print("THIS IS A FAILSAFE WHICH SHOULDNT BE ABLE TO BE TRIGGERED.")
+            return "EMPTY"
         else:
             return int(CurrentStr)
 
 
 NumPad=NumberField()
 print(NumPad.ContinuosRequest())
-
-    #def NumberPad():
-        
